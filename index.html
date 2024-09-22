@@ -46,9 +46,14 @@
         </div>
     </header>
 
+
+
     <div class=" flex gap-4 items-center justify-center py-5">
-        <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5">Donation</button>
-        <button class="btn bg-white font-bold text-xl rounded-md border px-5">History</button>
+        <!-- Donation Button  -->
+        <button id="donationTabBtn" class="btn bg-primary font-bold text-xl rounded-md border-none px-5">Donation</button>
+
+        <!-- History Button -->
+        <button id="historyTabBtn" class="btn bg-white font-bold text-xl rounded-md border px-5">History</button>
     </div>
 
 </section>
@@ -87,7 +92,7 @@
 
 
     <!-- Main Section -->
-    <main class="my-1 container mx-auto ">
+    <main id="donationTab" class="my-1 container mx-auto ">
         
         <!-- Card1 -->
     <section class="card"> 
@@ -163,6 +168,7 @@
 
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
