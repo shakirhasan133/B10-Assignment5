@@ -27,34 +27,42 @@
 <body>
     
     <!-- Header Section -->
+
+   
+
+<section class="sticky top-0 bg-white z-10">
     <header class="bg-header">
-        <div class="container mx-auto py-7 flex items-center justify-between ">
-            <div>
+        <div class="container mx-auto py-7 flex items-center justify-between md:px-0 px-6 ">
+            <div class="flex-1 flex justify-start">
                 <button class="btn bg-primary font-bold md:text-xl rounded-md border-none">Blog</button>
             </div>
-            <div class="flex items-center gap-4">
+            <div class=" flex-1 flex items-center gap-4 justify-center">
                 <img src="./assets/logo.png" alt="">
-                <h2 class="text-2xl font-semibold">Donate Bangladesh</h2>
+                <h2 class="text-2xl font-semibold hidden md:block">Donate Bangladesh</h2>
             </div>
-            <div class="flex items-center gap-4">
+            <div class=" flex-1 flex items-center md:gap-4  gap-2 justify-end">
                 <img src="./assets/coin.png" alt="">
-                <p class="text-2xl font-semibold text-gray-600"> <span>5000</span> BDT</p>
+                <p class="text-xl md:text-2xl font-semibold text-gray-600 flex gap-1"> <span>5000</span> BDT</p>
             </div>
         </div>
     </header>
 
+    <div class=" flex gap-4 items-center justify-center py-5">
+        <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5">Donation</button>
+        <button class="btn bg-white font-bold text-xl rounded-md border px-5">History</button>
+    </div>
+
+</section>
 
     <!-- Main Section -->
-    <main class="my-10 container mx-auto">
-        <div class=" flex gap-4 items-center justify-center">
-            <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5">Donation</button>
-            <button class="btn bg-white font-bold text-xl rounded-md border px-5">History</button>
-        </div>
-
-        <div class="my-10 md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
+    <main class="my-1 container mx-auto">
+        
+        <!-- Card1 -->
+    <section class="card"> 
+        <div class=" md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
             <div><img src="./assets/noakhali.png" alt="" class=" rounded-lg w-full"></div>
             <div>
-                <div class="flex items-center bg-header btn w-40  h-14">
+                <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
                     <img src="./assets/coin.png" alt="">
                     <p class="text-xl text-gray-600"><span>0</span> BDT</p>
                 </div>
@@ -67,10 +75,61 @@
                 </div>
             </div>
         </div>
+    </section>
+
+
+
+
+         <!-- Card2 -->
+         <section class="card"> 
+            <div class="my-10 md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
+                <div><img src="./assets/feni.png" alt="" class=" rounded-lg w-full"></div>
+                <div>
+                    <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
+                        <img src="./assets/coin.png" alt="">
+                        <p class="text-xl text-gray-600"><span>0</span> BDT</p>
+                    </div>
+    
+                    <div class="my-4">
+                        <h1 class="font-bold text-2xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="text-lg my-5"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full py-6" />
+                        <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5 w-full mt-5">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+             <!-- Card3 -->
+    <section class="card"> 
+        <div class="my-10 md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
+            <div><img src="./assets/quota-protest.png" alt="" class=" rounded-lg w-full"></div>
+            <div>
+                <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="text-xl text-gray-600"><span>0</span> BDT</p>
+                </div>
+
+                <div class="my-4">
+                    <h1 class="font-bold text-2xl">Aid for Injured in the Quota Movement</h1>
+                    <p class="text-lg my-5">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full py-6" />
+                    <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5 w-full mt-5">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-header h-20">
+
+    </footer>
 
     <script src="js/index.js"></script>
 </body>
