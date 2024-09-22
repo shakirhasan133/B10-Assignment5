@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Tailwind and Daisy UI CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+                header:'#F9F7F3'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    
+
+<!-- Header Section -->
+<section class="sticky top-0 bg-white z-10">
+    <header class="bg-header">
+        <div class="container mx-auto py-7 flex items-center justify-between md:px-0 px-6 ">
+            <div class="flex-1 flex justify-start">
+                <button class="btn bg-primary font-bold md:text-xl rounded-md border-none" ><a href="./index.html">Home </a></button>
+            </div>
+            <div class=" flex-1 flex items-center gap-4 justify-center">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="text-2xl font-semibold hidden md:block">Donate Bangladesh</h2>
+            </div>
+            <div class=" flex-1 flex items-center md:gap-4  gap-2 justify-end">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-xl md:text-2xl font-semibold text-gray-600 flex gap-1"> <span>5000</span> BDT</p>
+            </div>
+        </div>
+    </header>
+
+
+</section>
+
+
+    <main class="container mx-auto mt-10">
+
+        <div>
+            <details class="border shadow-md rounded-sm px-6 cursor-pointer py-5">
+                <summary class="text-2xl font-bold">What is the Document Object Model (DOM)?</summary>
+                <p class="px-6 my-5 text-xl">The DOM (Document Object Model) is like a tree structure that shows how all the parts of a web page, such as its content and elements, are organized and connected.</p>
+            </details>
+
+            <details class="border shadow-md rounded-sm my-6 px-6 cursor-pointer py-5">
+                <summary class="text-2xl font-bold">How do you select an element from the DOM?</summary>
+                <p class="px-6 my-5 text-xl"></p>
+            </details>
+
+            <details class="border shadow-md rounded-sm my-6 px-6 cursor-pointer py-5">
+                <summary class="text-2xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</summary>
+                <p class="px-6 my-5 text-xl"></p>
+            </details>
+
+            <details class="border shadow-md rounded-sm my-6 px-6 cursor-pointer py-5">
+                <summary class="text-2xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</summary>
+                <p class="px-6 my-5 text-xl"></p>
+            </details>
+
+
+        </div>
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-header h-20 ">
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
