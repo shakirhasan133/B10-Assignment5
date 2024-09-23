@@ -6,6 +6,9 @@ const donationTab = getElementById('donationTab');
 const historyTab = getElementById('historyTab');
 const successPop = getElementById('successPop');
 const popup = document.getElementById('popup');
+const btnNoakhali = document.getElementById('btnNoakhali');
+const btnFeni = document.getElementById('btnFeni');
+const btnQuota = document.getElementById('btnQuota');
 
 
 
@@ -52,43 +55,40 @@ historyTabBtn.addEventListener('click', function(){
 
 // Calculate Button Work Here
 
-const btnNoakhali = document.getElementById('btnNoakhali');
-
 btnNoakhali.addEventListener('click', function(){
-    const titleNoakhali = getElementById('titleNoakhali').innerText;
-    const noakhaliDonationInputValue = getElementById('noakhaliInput');
-    const noakhaliDonationAmount = parseInt(getElementById('noakhaliDonationAmount').innerText);
-    const noakhaliInput = parseInt(GetElementValueById('noakhaliInput'));
+    
+    const dTitle = 'titleNoakhali';
+    const inputV = 'noakhaliInput';
+    const Totaldiv = 'noakhaliDonationAmount';
 
-    if ( isNaN(noakhaliDonationInputValue.value) || noakhaliDonationInputValue.value<0) {
-        alert("Please Enter a Valid Number")
-        return
-    }
- 
-    if (donationCalculate()>noakhaliInput) {
-
-        const nResult = noakhaliDonationAmount + noakhaliInput;
-        getElementById('noakhaliDonationAmount').innerHTML = nResult
-
-        const lastMoney = donationCalculate() - noakhaliInput;
-        getElementById('myTotalMoney').innerText = lastMoney;
-
-        historyCreate(noakhaliInput, titleNoakhali);
+    calculate(dTitle, inputV, Totaldiv)
 
 
-
-
-        successPop.classList.remove('hidden')
-        popUpTimeout()
-        noakhaliDonationInputValue.value = '';
-        
-    }
-    else{
-        alert("insufficient Balance")
-    }
-
-  
 })
+
+
+
+// Feni Calculate Btn Work Here
+btnFeni.addEventListener('click', function(){
+    const dTitle = 'feniTitle';
+    const inputV = 'feniInput';
+    const Totaldiv = 'feniDonationAmmount';
+
+    calculate(dTitle, inputV, Totaldiv)
+})
+
+
+// Quota Calculate Btn Work Here
+btnQuota.addEventListener('click', function(){
+    const dTitle = 'quotaTitle';
+    const inputV = 'quotaInput';
+    const Totaldiv = 'quotaDonationAmmount';
+
+    calculate(dTitle, inputV, Totaldiv)
+})
+
+
+
 
 
 // Close Pop Up
