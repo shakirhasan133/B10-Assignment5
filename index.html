@@ -41,7 +41,7 @@
             </div>
             <div class=" flex-1 flex items-center md:gap-4  gap-2 justify-end">
                 <img src="./assets/coin.png" alt="">
-                <p class="text-xl md:text-2xl font-semibold text-gray-600 flex gap-1"> <span>5000</span> BDT</p>
+                <p class="text-xl md:text-2xl font-semibold text-gray-600 flex gap-1"> <span id="myTotalMoney">5000</span> BDT</p>
             </div>
         </div>
     </header>
@@ -60,15 +60,15 @@
 
 
 <!-- Success Pop-up Tab Open Here -->
-<div class="fixed inset-0  items-center justify-center bg-[rgba(0,0,0,0.5)] z-20 hidden  ">
+<div id="successPop" class="fixed inset-0  items-center justify-center bg-[rgba(0,0,0,0.5)] z-20 hidden ">
 
-    <div class="w-96 flex items-center justify-center bg-white shadow-2xl  left-1/2 top-1/2 fixed z-10 p-8 transform -translate-x-1/2 -translate-y-1/2 rounded-xl">
-        <div class="flex flex-col items-center ">
-            <h1 class="text-3xl">Congrates!</h1>
+    <div id="popup" class="w-96 flex items-center justify-center bg-white shadow-2xl left-1/2 top-1/2 fixed z-10 p-8 transform -translate-x-1/2 -translate-y-1/2 rounded-xl">
+        <div class="flex flex-col items-center">
+            <h1 class="text-3xl">Congrats!</h1>
             <img src="./assets/coin.png" alt="" class="my-3">
             <p>You Have Donated for Humankind</p>
             <h2 class="text-2xl my-2">Successfully</h2>
-            <button class="btn mt-2" > Close Information</button>
+            <button id="closePop" class="btn mt-2">Close information</button>
         </div>
     </div>
 </div>
@@ -76,9 +76,7 @@
 
 <!-- History Tab Work Here -->
 <div id="historyTab" class="container mx-auto hidden">
-    <div class="border w-full h-[150px] rounded-lg shadow-lg py-10">
 
-    </div>
  </div>
 
 
@@ -99,16 +97,16 @@
         <div class=" md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
             <div><img src="./assets/noakhali.png" alt="" class=" rounded-lg w-full"></div>
             <div>
-                <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
+                <div class="flex items-center bg-header btn w-56  h-14 md:mt-0 mt-4">
                     <img src="./assets/coin.png" alt="">
-                    <p class="text-xl text-gray-600"><span>0</span> BDT</p>
+                    <p class="text-xl text-gray-600"><span id="noakhaliDonationAmount">0</span> BDT</p>
                 </div>
 
                 <div class="my-4">
-                    <h1 class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <h1 id="titleNoakhali" class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="text-lg my-5"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full py-6" />
-                    <button class="btn bg-primary font-bold text-xl rounded-md border-none px-5 w-full mt-5">Donate Now</button>
+                    <input id="noakhaliInput" type="text" placeholder="Write Donation Amount" class="input input-bordered  w-full py-6" />
+                    <button id="btnNoakhali" class="btn bg-primary font-bold text-xl rounded-md border-none px-5 w-full mt-5">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -122,7 +120,7 @@
             <div class="my-10 md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
                 <div><img src="./assets/feni.png" alt="" class=" rounded-lg w-full"></div>
                 <div>
-                    <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
+                    <div class="flex items-center bg-header btn w-56  h-14 md:mt-0 mt-4">
                         <img src="./assets/coin.png" alt="">
                         <p class="text-xl text-gray-600"><span>0</span> BDT</p>
                     </div>
@@ -146,7 +144,7 @@
         <div class="my-10 md:grid gap-8 grid-cols-2 p-8 border-4 rounded-lg border-gray-200 " >
             <div><img src="./assets/quota-protest.png" alt="" class=" rounded-lg w-full"></div>
             <div>
-                <div class="flex items-center bg-header btn w-40  h-14 md:mt-0 mt-4">
+                <div class="flex items-center bg-header btn w-56  h-14 md:mt-0 mt-4">
                     <img src="./assets/coin.png" alt="">
                     <p class="text-xl text-gray-600"><span>0</span> BDT</p>
                 </div>
