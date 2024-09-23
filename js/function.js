@@ -57,7 +57,7 @@ function calculate(dTitle, inputV, Totaldiv){
         return
     }
  
-    if (donationCalculate()>donationValueInt) {
+    if (donationCalculate()>=donationValueInt) {
 
         const nResult = totalDonationAmount + donationValueInt;
         getElementById(Totaldiv).innerHTML = nResult
