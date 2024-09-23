@@ -25,7 +25,9 @@ function historyCreate(dTk, toDestination){
         <p class = "md:font-semibold">Date : ${Time}</p>
     `;
 
-    historyTab.appendChild(div)
+    // historyTab.appendChild(div)
+    historyTab.insertBefore(div, historyTab.childNodes[0])
+  
 
 }
 
