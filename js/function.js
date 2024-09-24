@@ -52,7 +52,9 @@ function calculate(dTitle, inputV, Totaldiv){
     const totalDonationAmount = parseInt(getElementById(Totaldiv).innerText);
     const donationValueInt = parseInt(donationInputValue);
 
-    if ( isNaN(donationInputValue) || donationInputValue<0) {
+    console.log(donationValueInt);
+    
+    if ( isNaN(donationValueInt) || donationInputValue<0 ) {
         alert("Please Enter a Valid Number")
         return
     }
@@ -71,6 +73,7 @@ function calculate(dTitle, inputV, Totaldiv){
 
 
         successPop.classList.remove('hidden')
+ 
         popUpTimeout()
         
         inputValue.value = '';
